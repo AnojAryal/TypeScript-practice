@@ -27,3 +27,23 @@ const circ = (diameter : number) => {  // in ts we can define the type of a vari
 
 console.log(circ(12));
 //ts allow us to typecheck during development 
+
+//objects and arrays
+
+//arrays
+let names = ['FraNzY', 'Kriti', 'Tatto'];
+
+names.push('Bini');
+
+let numbers = [18,19,20];
+
+numbers.push(21);
+
+let mixed = ['Ram', 1, 'Virat Kohli', 18];
+
+mixed.push('Anoj');
+mixed.push(10);
+
+mixed[0] = 3;
+
+

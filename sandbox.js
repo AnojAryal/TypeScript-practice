@@ -17,3 +17,13 @@ var circ = function (diameter) {
 };
 console.log(circ(12));
 //ts allow us to typecheck during development 
+//objects and arrays
+//arrays
+var names = ['FraNzY', 'Kriti', 'Tatto'];
+names.push('Bini');
+var numbers = [18, 19, 20];
+numbers.push(21);
+var mixed = ['Ram', 1, 'Virat Kohli', 18];
+mixed.push('Anoj');
+mixed.push(10);
+mixed[0] = 3;

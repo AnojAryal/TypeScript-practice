@@ -27,3 +27,17 @@ var mixed = ['Ram', 1, 'Virat Kohli', 18];
 mixed.push('Anoj');
 mixed.push(10);
 mixed[0] = 3;
+//objects
+var ninja = {
+    name: 'mario',
+    belt: 'black',
+    age: 21
+};
+ninja.age = 22;
+ninja.belt = 'white';
+//re - assignable of same type
+ninja = {
+    name: 'franco',
+    belt: 'orange',
+    age: 27
+};

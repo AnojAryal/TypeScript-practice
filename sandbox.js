@@ -41,3 +41,26 @@ ninja = {
     belt: 'orange',
     age: 27
 };
+//explict types
+var char1;
+var age2;
+var isLoggedIn;
+age2 = 29;
+char1 = 'Ramu';
+isLoggedIn: true;
+var pandas;
+pandas = ['shyam', 'raju', ' babu bhaiya'];
+var animals = [];
+animals.push('tiger');
+//union types
+var mixed11 = [];
+mixed11.push(112, 'geeta');
+console.log(mixed11);
+var uid;
+uid = 1;
+console.log(uid);
+//declare variables as an obj
+var ninjaOne;
+ninjaOne = { name: 'prakash', age: 11 };
+var ninjaTwo;
+ninjaTwo = { name: 'paru', age: 17, completed: false };

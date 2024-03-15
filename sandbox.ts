@@ -106,3 +106,29 @@ let ninjaTwo : {
 };
 
 ninjaTwo= {name : 'paru' , age : 17, completed : false};
+
+
+//dynamic any type
+
+let age3 :any = 25;
+
+age3 = true;
+
+console.log(age3);
+
+age3 = 'hello';
+
+console.log(age3);
+
+let mixed3 : any []= [];
+
+mixed3.push(3)
+
+
+let sanjo :{
+    name : any,
+    age : any
+}
+
+
+sanjo = {name : 'hari', age :73};

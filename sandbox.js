@@ -64,3 +64,13 @@ var ninjaOne;
 ninjaOne = { name: 'prakash', age: 11 };
 var ninjaTwo;
 ninjaTwo = { name: 'paru', age: 17, completed: false };
+//dynamic any type
+var age3 = 25;
+age3 = true;
+console.log(age3);
+age3 = 'hello';
+console.log(age3);
+var mixed3 = [];
+mixed3.push(3);
+var sanjo;
+sanjo = { name: 'hari', age: 73 };

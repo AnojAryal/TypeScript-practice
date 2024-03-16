@@ -1,5 +1,5 @@
-const user = 'FraNzY';
-console.log(user);
+const user1 = 'FraNzY';
+console.log(user1);
 
 const input1 = document.querySelectorAll('input');
 console.log(input1);

@@ -75,3 +75,19 @@ let mixed3 = [];
 mixed3.push(3);
 let sanjo;
 sanjo = { name: 'hari', age: 73 };
+//function type
+let greet = () => {
+    console.log('Hello world!!');
+};
+let greet1;
+greet1 = () => {
+    console.log('Hello FraNzY!!');
+};
+const add = (a, b) => {
+    console.log(a + b);
+};
+add(5, 10);
+const minus = (a, b) => {
+    return a - b;
+};
+let result = minus(10, 8);

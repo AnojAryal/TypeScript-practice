@@ -132,3 +132,29 @@ let sanjo :{
 
 
 sanjo = {name : 'hari', age :73};
+
+
+//function type
+let greet =()=> {
+    console.log('Hello world!!');
+    
+}
+
+let greet1 : Function;
+
+greet1 =()=> {
+    console.log('Hello FraNzY!!');
+    
+}
+
+const add = (a : number, b: number) =>{
+    console.log(a+ b);
+    
+}
+add(5,10);
+
+const minus = (a : number, b: number) =>{
+    return a - b
+    
+}
+let result = minus(10,8);

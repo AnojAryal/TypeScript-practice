@@ -158,3 +158,11 @@ const minus = (a : number, b: number) =>{
     
 }
 let result = minus(10,8);
+
+
+type StringOrNum = string | number;
+
+const logDetails =(uid : StringOrNum, item: string)=> {
+    console.log(`${item} has a uid of ${uid}`);
+    
+}

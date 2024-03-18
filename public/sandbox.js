@@ -91,3 +91,6 @@ const minus = (a, b) => {
     return a - b;
 };
 let result = minus(10, 8);
+const logDetails = (uid, item) => {
+    console.log(`${item} has a uid of ${uid}`);
+};

@@ -94,3 +94,10 @@ let result = minus(10, 8);
 const logDetails = (uid, item) => {
     console.log(`${item} has a uid of ${uid}`);
 };
+//function signature
+// let meet : Function;
+//example 1
+let meet;
+meet = (name, greeting) => {
+    console.log(`${name} says ${greeting}`);
+};

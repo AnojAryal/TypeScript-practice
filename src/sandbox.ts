@@ -166,3 +166,15 @@ const logDetails =(uid : StringOrNum, item: string)=> {
     console.log(`${item} has a uid of ${uid}`);
     
 }
+
+//function signature
+
+// let meet : Function;
+
+//example 1
+
+let meet : (x : string, y: string)=> void;
+
+meet = (name : string, greeting : string) => {
+    console.log(`${name} says ${greeting}`);  
+}

@@ -2,6 +2,35 @@
 
 // const form = document.querySelector('form')!;
 
+//class
+class Invoice {
+    client : string;
+    details : string;
+    amount : number;
+
+    constructor(c: string, d: string, a: number){
+        this.client = c;
+        this.details = d;
+        this.amount = a;
+    }
+
+    format() {
+        return `${this.client} oews ${this.amount} for ${this.details}`
+    }
+}
+const invOne = new Invoice('FraNzY', 'WOrk on FraNzY website', 350);
+const invTwo = new Invoice('Asmi', 'WOrk on Asmi website', 250);
+
+let invoices : Invoice[] = [];
+
+invoices.push(invOne);
+invoices.push(invTwo);
+
+
+console.log(invoices);
+
+
+
 const form = document.querySelector('.new-item-form') as HTMLFormElement;
 
 // console.log(form.children);

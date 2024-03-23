@@ -3,10 +3,13 @@
 // const form = document.querySelector('form')!;
 //class
 class Invoice {
-    constructor(c, d, a) {
-        this.client = c;
-        this.details = d;
-        this.amount = a;
+    // readonly client : string;
+    // private details : string;
+    // public amount : number;
+    constructor(client, details, amount) {
+        this.client = client;
+        this.details = details;
+        this.amount = amount;
     }
     format() {
         return `${this.client} oews ${this.amount} for ${this.details}`;
@@ -18,7 +21,7 @@ let invoices = [];
 invoices.push(invOne);
 invoices.push(invTwo);
 invoices.forEach(inv => {
-    console.log(inv.client, inv.details, inv.amount, inv.format());
+    console.log(inv.client, inv.amount, inv.format());
 });
 const form = document.querySelector('.new-item-form');
 // console.log(form.children);

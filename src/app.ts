@@ -27,7 +27,11 @@ invoices.push(invOne);
 invoices.push(invTwo);
 
 
-console.log(invoices);
+
+invoices.forEach(inv => {
+    console.log(inv.client, inv.details,inv.amount, inv.format());
+})
+
 
 
 

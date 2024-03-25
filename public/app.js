@@ -1,20 +1,21 @@
-"use strict";
-// console.log('Hello');
+const me = {
+    name: 'Anoj',
+    age: 21,
+    speak(text) {
+        console.log(text);
+    },
+    spend(amount) {
+        console.log('I spend', amount);
+        return amount;
+    }
+};
+const greetPerson = (person) => {
+    console.log('hello', person.name);
+};
+greetPerson(me);
+console.log(me);
+import { Invoice } from './classes/invoice.js';
 // const form = document.querySelector('form')!;
-//class
-class Invoice {
-    // readonly client : string;
-    // private details : string;
-    // public amount : number;
-    constructor(client, details, amount) {
-        this.client = client;
-        this.details = details;
-        this.amount = amount;
-    }
-    format() {
-        return `${this.client} oews ${this.amount} for ${this.details}`;
-    }
-}
 const invOne = new Invoice('FraNzY', 'WOrk on FraNzY website', 350);
 const invTwo = new Invoice('Asmi', 'WOrk on Asmi website', 250);
 let invoices = [];

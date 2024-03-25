@@ -1,3 +1,35 @@
+//interfaces
+interface IsPerson {
+    name : string;
+    age : number;
+    speak(a: string) : void;
+    spend(a : number) : void;
+}
+
+const me: IsPerson = {
+    name : 'Anoj',
+    age : 21,
+    speak(text : string ): void {
+        console.log(text);
+    },
+    spend(amount : number) : number {
+        console.log('I spend', amount);
+        return amount;
+        
+    }
+};
+
+const greetPerson = (person : IsPerson) => {
+    console.log('hello',person.name);
+    
+}
+
+greetPerson(me);
+
+console.log(me);
+
+
+
 import {Invoice} from './classes/invoice.js';
 
 // const form = document.querySelector('form')!;
@@ -9,22 +41,15 @@ let invoices : Invoice[] = [];
 invoices.push(invOne);
 invoices.push(invTwo);
 
-
-
 invoices.forEach(inv => {
     console.log(inv.client, inv.amount, inv.format());
 })
-
-
-
 
 const form = document.querySelector('.new-item-form') as HTMLFormElement;
 
 // console.log(form.children);
 
-
 //inputs 
-
 const type = document.querySelector('#type') as HTMLSelectElement;
 const tofrom = document.querySelector('#tofrom') as HTMLInputElement;
 const details = document.querySelector('#details') as HTMLInputElement;

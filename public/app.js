@@ -18,7 +18,6 @@ import { Payment } from './classes/payment.js';
 //     console.log(inv.client, inv.amount, inv.format());
 // })
 const form = document.querySelector('.new-item-form');
-// console.log(form.children);
 //inputs 
 const type = document.querySelector('#type');
 const tofrom = document.querySelector('#tofrom');
